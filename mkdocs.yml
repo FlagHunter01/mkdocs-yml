@@ -8,6 +8,8 @@ site_name: Material for MkDocs setup and reference
 site_author: Flag Hunter
 # Site description (overridden by page descriptions)
 site_description: Quick reference page that helps setting up  Material for MkDocs and using advanced markdown functionnalities
+# Site URL needed by the social plugin
+site_url: https://FlagHuner01.github.io/mkdocs-yml/
 # Copyright notice in footer
 copyright: Copyright &copy; Flag Hunter
 
