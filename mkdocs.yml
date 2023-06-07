@@ -165,7 +165,7 @@ plugins:
   # Make search work offline and other offline ajustments
   #- offline
   # Formatting persists in titles
-  - typeset
+  #- typeset
   # Image zoom
   - glightbox
 
