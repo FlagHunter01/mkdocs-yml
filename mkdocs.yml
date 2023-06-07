@@ -142,7 +142,7 @@ theme:
 ### Plugins
 plugins:
   # Downloads everything localy
-  - privacy
+  #- privacy
   # Search bar
   - search
   # Social cards and image formating
