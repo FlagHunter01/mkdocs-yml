@@ -87,7 +87,6 @@ Text
 
 ### Annotations
 
-```title="Text with annotations"
 Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 { .annotate }
 
@@ -95,7 +94,6 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
     { .annotate }
 
     1.  :woman_raising_hand: I'm an annotation as well!
-```
 
 Those can go in admonitions, content tabs of anything else. 
 
@@ -105,11 +103,11 @@ Those can go in admonitions, content tabs of anything else.
 [Pesant button](#){ .md-button }
 [:rocket:](#){ .md-button }
 
-### Code
+### Code 
 
 `#!python inline()`
 
-```py title="python block" linenums="1" hl_lines "3 4"
+```py title="python block" linenums="1" hl_lines="3 4"
 # (1)!
 import ExternalFile as ef
 

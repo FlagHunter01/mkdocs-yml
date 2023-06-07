@@ -3,20 +3,20 @@
 ## Authoring
 
 # Displayed site name
-site_name:
+site_name: Material for MkDocs setup and reference
 # ?
-site_author: 
+site_author: Flag Hunter
 # Site description (overridden by page descriptions)
-site_description: 
+site_description: Quick reference page that helps setting up  Material for MkDocs and using advanced markdown functionnalities
 # Copyright notice in footer
-copyright: Copyright &copy; 
+copyright: Copyright &copy; Flag Hunter
 
 ## Git
 
 # Git repository
-repo_url: 
+repo_url: https://github.com/FlagHunter01/mkdocs-yml
 # Name of the repository
-repo_name: 
+repo_name: FlagHunter01/mkdocs-yml
 # Enables page modification
 edit_uri: edit/main/docs
 
@@ -41,16 +41,16 @@ theme:
   
   # Language selection.
   # For multiple languages, create multiple projects and link them with the language selector
-  language: 
+  language: en
 
   # Logo as an image
-  logo: assets/logo.png
+  #logo: assets/logo.png
   # logo as an icon
   # Find 'em here: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
-  logo: material/library 
+  logo: material/library
 
   # Favicon can be set as an image
-  favicon:
+  #favicon:
 
   ## Color palette
   palette:
@@ -67,8 +67,8 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary:
-      accent:
+      #primary:
+      #accent:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -76,8 +76,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-      primary:
-      accent:
+      #primary:
+      #accent:
   
   features:
     ## Site navigation
@@ -147,23 +147,23 @@ plugins:
   - search
   # Social cards and image formating
   - social:
-    cards_layout: default/variant
+      cards_layout: default/variant
   # Blog. 
   # Setup info here: https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/#setting-up-a-blog
-  - blog
+  #- blog
   # Creation and modofication dates
   - git-revision-date-localized:
-    enable_creation_date: true
-    type: timeago
-    fallback_to_build_date: true
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
   # GutHub contributors
   - git-committers:
-    repository:
-    branch:
+      repository: FlagHunter01/material-yml
+      branch: main
   # Loading optimization
-  - optimize
+  #- optimize
   # Make search work offline and other offline ajustments
-  - offline
+  #- offline
   # Formatting persists in titles
   - typeset
   # Image zoom
@@ -176,6 +176,12 @@ plugins:
 
 
 markdown_extensions:
+
+  ## Table of contents
+
+  - toc:
+      permalink: ⚓︎
+      permalink_title: Link to this specific section
 
   ## Admonitions
   - admonition
@@ -211,6 +217,12 @@ markdown_extensions:
 
   - footnotes
 
+  ## Emojis
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
   ## Formatting
 
   - pymdownx.critic
@@ -234,12 +246,12 @@ markdown_extensions:
 ### Random stuff
 extra:
   # Overriding the URL of the logo button
-  homepage: 
+  #homepage: 
   # Links to social networks
-  social:
-    - icon: 
-      link:
-      name:
+  #social:
+    #- icon: 
+      #link:
+      #name:
   # Page status
   status:
     new: New
