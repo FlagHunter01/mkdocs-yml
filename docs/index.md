@@ -15,7 +15,7 @@ subtitle: Good luck.
 
 ### Dependancies
 
-For better performance and to avoid compatibility issues, install the lates [Python]()
+For better performance and to avoid compatibility issues, install the latest [Python]()
 
 ```title="Installing dependancies"
 pip install pillow cairosvg
