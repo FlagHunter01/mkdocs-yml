@@ -1,0 +1,79 @@
+# Better read on VSCode with the TODO Highlight v2 module
+
+### General information 
+
+# TODO: Name displayed in the top menu and in the browsers tabs
+site_name: Example YML configuration
+# TODO: URL of the website
+site_url: https://flaghunter01.github.io/mkdocs-yml/
+
+### Navigation
+
+nav: 
+  - Home: index.md
+
+### Theme customization
+
+theme:
+  # Enables the material theme
+  name: material
+
+  ## Colors
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      primary: deep purple
+      accent: light blue
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: deep purple
+      accent: light blue
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: teal
+      accent: amber
+
+  ## Font
+
+  # If the privacy module isn't used, uncomment the following line to stay in GDPR
+  #font: false
+  font:
+    # All text except code
+    text: Roboto
+    # Inline and block code
+    code: Roboto Mono
+  
+  ## Language
+
+  # TODO: Don't forget to change if in multilingual project
+  language: en
+
+  ## Logo and icons
+
+  # TODO: Use a custom image
+  #logo: assets/logo.png
+  # TODO: Use a bundled icon
+  icon:
+    logo: material/library
+  # TODO: favicon (icon in the browsers tab)
+  #favicon: assets/favicon.png
+
+### Plugins
+
+plugins:
+  # Privacy (GRDP)
+  - privacy
+    
+    
