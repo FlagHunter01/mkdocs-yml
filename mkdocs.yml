@@ -92,11 +92,29 @@ theme:
     - navigation.indexes
     # Back to top button
     - navigation.top
-    
+
+    ## Search
+
+    # Search autocompletion
+    - search.suggest
+    # Highlight hits
+    - search.highlight
+
 
 ### Plugins
 
 plugins:
   # Privacy (GRDP)
   - privacy
+  # Search
+  - search
+  # Social cards
+  - social
+  # Blog
+  - blog
+  # RSS
+  - rss:
+    match_path: blog/posts/.*
+    date_from_meta:
+      as_creation: date
     
