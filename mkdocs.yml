@@ -111,7 +111,6 @@ theme:
     # View page source
     - content.action.view
 
-
 ### Plugins
 
 plugins:
@@ -138,6 +137,8 @@ plugins:
       #repository:
       # TODO: Branch
       #branch: main
+  # Offline
+  - offline
     
 ### Socials
 # TODO: customize
@@ -145,3 +146,52 @@ plugins:
 #  social:
 #    - icon: material/mail
 #      link: mailto:tim@frolov.eu
+
+markdown_extensions:
+  # Abbreviations: RER *[RER]: Réseau Express Régional  --> <p><abbr title="Réseau Express Régional">RER</abbr></p>
+  - abbr
+  # Admonitions (or call-outs)
+  - admonition
+  # Collapseable admonitions
+  - pymdownx.details
+  # Inline footnotes
+  - footnotes
+  # Table of contents
+  - toc:
+    # Make the anchor visible
+    permalink: ⚓︎
+  # Tables
+  - tables
+  # Better bold and italic detection
+  - pymdownx.betterem
+  # Text highlighting
+  - pymdownx.caret
+  # Code hightlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+  # Inline code highlighting
+  - pymdownx.inlinehilite
+  # Nesting code and admonitions
+  - pymdownx.superfences
+  # Subscript 
+  - pymdownx.mark
+  # Superscript 
+  - pymdownx.tilde
+  # Diff support
+  - pymdownx.critic
+  # Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Render keyboard keys
+  - pymdownx.keys
+  # Convert strings to symbols e.g.: &copy --> ©
+  - pymdownx.smartsymbols
+  # Content tabs
+  - pymdownx.tabbed:
+    alternate_style: true
+  # Lists with checkboxes
+  - pymdownx.tasklist:
+    custom_checkbox: true
+    # Make them clickable
+    clickable_checkbox: true
