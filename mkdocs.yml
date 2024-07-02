@@ -70,10 +70,33 @@ theme:
   # TODO: favicon (icon in the browsers tab)
   #favicon: assets/favicon.png
 
+  features:
+    
+    ## Navigation
+
+    # Monopage mode using XHR
+    - navigation.instant
+    # Prefetch the page when the user hovers the link to it
+    - navigation.instant.prefetch
+    # Show loading progress bar (not shown if loading takes less than 0.4s) 
+    - navigation.instant.progress
+    # Link preview FIXME: buy latest Insiders version
+    #- navigation.instant.preview
+    # Anchor tracking
+    - navigation.tracking
+    # Display tabs in top menu
+    - navigation.tabs
+    # Breadcrumbs on top of the page
+    - navigation.path
+    # Allow sections to have index pages
+    - navigation.indexes
+    # Back to top button
+    - navigation.top
+    
+
 ### Plugins
 
 plugins:
   # Privacy (GRDP)
   - privacy
-    
     
