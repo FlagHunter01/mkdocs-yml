@@ -6,6 +6,10 @@
 site_name: Example YML configuration
 # TODO: URL of the website
 site_url: https://flaghunter01.github.io/mkdocs-yml/
+# TODO: GitHub repo URL
+#repo_url:
+# TODO: GitHub repo name
+# repo_name
 
 ### Navigation
 
@@ -92,6 +96,8 @@ theme:
     - navigation.indexes
     # Back to top button
     - navigation.top
+    # Footer nav
+    - navigation.footer
 
     ## Search
 
@@ -99,6 +105,11 @@ theme:
     - search.suggest
     # Highlight hits
     - search.highlight
+
+    ## GitHub integration
+    
+    # View page source
+    - content.action.view
 
 
 ### Plugins
@@ -117,4 +128,20 @@ plugins:
     match_path: blog/posts/.*
     date_from_meta:
       as_creation: date
+  # Git dates
+  - git-revision-date-localized:
+      # Show the creation date along with the last modif date
+      enable_creation_date: true
+  # Git commiters
+  - git-committers:
+      # TODO: Repo URL
+      #repository:
+      # TODO: Branch
+      #branch: main
     
+### Socials
+# TODO: customize
+#extra:
+#  social:
+#    - icon: material/mail
+#      link: mailto:tim@frolov.eu
