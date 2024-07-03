@@ -7,7 +7,7 @@ site_name: Mkdocs Material YML configuration example
 # TODO: URL of the website
 site_url: https://flaghunter01.github.io/mkdocs-yml/
 # TODO: GitHub repo URL
-repo_url: https://github.com/FlagHunter01/mkdocs-yml
+repo_url: https://github.com/FlagHunter01/mkdocs-yml/
 # TODO: GitHub repo name
 repo_name: mkdocs-yml 
 
@@ -90,7 +90,7 @@ theme:
     # Show loading progress bar (not shown if loading takes less than 0.4s) 
     - navigation.instant.progress
     # Link preview FIXME: buy latest Insiders version
-    #- navigation.instant.preview
+    - navigation.instant.preview
     # Anchor tracking
     - navigation.tracking
     # Display tabs in top menu
@@ -116,6 +116,13 @@ theme:
     # View page source
     - content.action.view
 
+    ## Code blocks
+
+    # Copy button
+    - content.code.copy
+    # Line selection button
+    - content.code.select
+
     ## Misc
 
     # Link content tabs togeather
@@ -132,25 +139,25 @@ plugins:
   - privacy
   # Search
   - search
-  # Social cards
-  - social
+  # FIXME:Social cards
+  #- social
   # Blog
   - blog
   # RSS
   - rss:
-    match_path: blog/posts/.*
-    date_from_meta:
-      as_creation: date
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
   # Git dates
   - git-revision-date-localized:
       # Show the creation date along with the last modif date
       enable_creation_date: true
-  # Git commiters
-  - git-committers:
-      # TODO: Repo URL
-      #repository:
-      # TODO: Branch
-      #branch: main
+  # FIXME:Git commiters 
+  #- git-committers:
+    # TODO: Repo URL
+  #    repository: FlagHunter01/mkdocs-yml
+    # TODO: Branch
+  #    branch: main
   # Offline
   - offline
     
@@ -184,7 +191,7 @@ markdown_extensions:
   # Table of contents
   - toc:
     # Make the anchor visible
-    permalink: ⚓︎
+      permalink: ⚓︎
   # Tables
   - tables
   # Better bold and italic detection
@@ -214,9 +221,9 @@ markdown_extensions:
   - pymdownx.smartsymbols
   # Content tabs
   - pymdownx.tabbed:
-    alternate_style: true
+      alternate_style: true
   # Lists with checkboxes
   - pymdownx.tasklist:
-    custom_checkbox: true
+      custom_checkbox: true
     # Make them clickable
-    clickable_checkbox: true
+      clickable_checkbox: true
