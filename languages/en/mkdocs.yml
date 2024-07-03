@@ -1,0 +1,213 @@
+# Better read on VSCode with the TODO Highlight v2 module
+
+### General information 
+
+# TODO: Name displayed in the top menu and in the browsers tabs
+site_name: Mkdocs Material YML configuration example
+# TODO: URL of the website
+site_url: https://flaghunter01.github.io/mkdocs-yml/
+# TODO: GitHub repo URL
+repo_url: https://github.com/FlagHunter01/mkdocs-yml
+# TODO: GitHub repo name
+repo_name: mkdocs-yml 
+
+### Navigation
+
+nav: 
+  - Home: index.md
+  - Blog: blog/index.html
+  - Guide: 
+    - guide/index.md
+    - Setup: guide/setup.md
+    - Useage: guide/useage.md
+
+### Theme customization
+
+theme:
+  # Enables the material theme
+  name: material
+
+  ## Colors
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      primary: deep purple
+      accent: light blue
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: deep purple
+      accent: light blue
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: teal
+      accent: amber
+
+  ## Font
+
+  # If the privacy module isn't used, uncomment the following line to stay in GDPR
+  #font: false
+  font:
+    # All text except code
+    text: Roboto
+    # Inline and block code
+    code: Roboto Mono
+  
+  ## Language
+
+  # TODO: Don't forget to change if in multilingual project
+  language: en
+
+  ## Logo and icons
+
+  # TODO: Use a custom image
+  #logo: assets/logo.png
+  # TODO: Use a bundled icon
+  #icon:
+  #  logo: material/library
+  # TODO: favicon (icon in the browsers tab)
+  #favicon: assets/favicon.png
+
+  features:
+    
+    ## Navigation
+
+    # Monopage mode using XHR
+    - navigation.instant
+    # Prefetch the page when the user hovers the link to it
+    - navigation.instant.prefetch
+    # Show loading progress bar (not shown if loading takes less than 0.4s) 
+    - navigation.instant.progress
+    # Link preview FIXME: buy latest Insiders version
+    #- navigation.instant.preview
+    # Anchor tracking
+    - navigation.tracking
+    # Display tabs in top menu
+    - navigation.tabs
+    # Breadcrumbs on top of the page
+    - navigation.path
+    # Allow sections to have index pages
+    - navigation.indexes
+    # Back to top button
+    - navigation.top
+    # Footer nav
+    - navigation.footer
+
+    ## Search
+
+    # Search autocompletion
+    - search.suggest
+    # Highlight hits
+    - search.highlight
+
+    ## GitHub integration
+    
+    # View page source
+    - content.action.view
+
+### Plugins
+
+plugins:
+  # Privacy (GRDP)
+  - privacy
+  # Search
+  - search
+  # Social cards
+  - social
+  # Blog
+  - blog
+  # RSS
+  - rss:
+    match_path: blog/posts/.*
+    date_from_meta:
+      as_creation: date
+  # Git dates
+  - git-revision-date-localized:
+      # Show the creation date along with the last modif date
+      enable_creation_date: true
+  # Git commiters
+  - git-committers:
+      # TODO: Repo URL
+      #repository:
+      # TODO: Branch
+      #branch: main
+  # Offline
+  - offline
+    
+extra:
+  ### Socials
+
+  # TODO: customize
+  social:
+    - icon: material/github
+      link: https://github.com/FlagHunter01
+
+  ### Language switch
+
+  alternate:
+    - name: English
+      link: .
+      lang: en
+    - name: Français
+      link: ../fr/
+      lang: fr
+
+markdown_extensions:
+  # Abbreviations: RER *[RER]: Réseau Express Régional  --> <p><abbr title="Réseau Express Régional">RER</abbr></p>
+  - abbr
+  # Admonitions (or call-outs)
+  - admonition
+  # Collapseable admonitions
+  - pymdownx.details
+  # Inline footnotes
+  - footnotes
+  # Table of contents
+  - toc:
+    # Make the anchor visible
+    permalink: ⚓︎
+  # Tables
+  - tables
+  # Better bold and italic detection
+  - pymdownx.betterem
+  # Text highlighting
+  - pymdownx.caret
+  # Code hightlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+  # Inline code highlighting
+  - pymdownx.inlinehilite
+  # Nesting code and admonitions
+  - pymdownx.superfences
+  # Subscript 
+  - pymdownx.mark
+  # Superscript 
+  - pymdownx.tilde
+  # Diff support
+  - pymdownx.critic
+  # Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Render keyboard keys
+  - pymdownx.keys
+  # Convert strings to symbols e.g.: &copy --> ©
+  - pymdownx.smartsymbols
+  # Content tabs
+  - pymdownx.tabbed:
+    alternate_style: true
+  # Lists with checkboxes
+  - pymdownx.tasklist:
+    custom_checkbox: true
+    # Make them clickable
+    clickable_checkbox: true
