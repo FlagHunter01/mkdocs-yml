@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+---
+title: Material for Mkdocs Insiders YML example
+description: This is the template I use to create my sites using Material for Mkdocs Insiders. Read the guide to get started and use the source code to quickly create your own template. 
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Material for Mkdocs Insiders YML example
 
-## Commands
+This project is a template of the YML configuration I use for my Material for Mkdocs projects.
+It also displays an example layout populated by a guide.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
