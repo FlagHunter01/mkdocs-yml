@@ -116,6 +116,15 @@ theme:
     # View page source
     - content.action.view
 
+    ## Misc
+
+    # Link content tabs togeather
+    - content.tabs.link
+    # Display footnotes as tooltips
+    - content.footnote.tooltips
+    # Tooltips
+    - content.tooltips
+
 ### Plugins
 
 plugins:
