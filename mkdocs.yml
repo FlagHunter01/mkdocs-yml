@@ -3,18 +3,23 @@
 ### General information 
 
 # TODO: Name displayed in the top menu and in the browsers tabs
-site_name: Example YML configuration
+site_name: Mkdocs Material YML configuration example
 # TODO: URL of the website
 site_url: https://flaghunter01.github.io/mkdocs-yml/
 # TODO: GitHub repo URL
-#repo_url:
+repo_url: https://github.com/FlagHunter01/mkdocs-yml
 # TODO: GitHub repo name
-# repo_name
+repo_name: mkdocs-yml 
 
 ### Navigation
 
 nav: 
   - Home: index.md
+  - Blog: blog/index.html
+  - Guide: 
+    - guide/index.md
+    - Setup: guide/setup.md
+    - Useage: guide/useage.md
 
 ### Theme customization
 
@@ -69,8 +74,8 @@ theme:
   # TODO: Use a custom image
   #logo: assets/logo.png
   # TODO: Use a bundled icon
-  icon:
-    logo: material/library
+  #icon:
+  #  logo: material/library
   # TODO: favicon (icon in the browsers tab)
   #favicon: assets/favicon.png
 
@@ -140,12 +145,23 @@ plugins:
   # Offline
   - offline
     
-### Socials
-# TODO: customize
-#extra:
-#  social:
-#    - icon: material/mail
-#      link: mailto:tim@frolov.eu
+extra:
+  ### Socials
+
+  # TODO: customize
+  social:
+    - icon: material/github
+      link: https://github.com/FlagHunter01
+
+  ### Language switch
+
+  alternate:
+    - name: English
+      link: .
+      lang: en
+    - name: Français
+      link: ../fr/
+      lang: fr
 
 markdown_extensions:
   # Abbreviations: RER *[RER]: Réseau Express Régional  --> <p><abbr title="Réseau Express Régional">RER</abbr></p>
