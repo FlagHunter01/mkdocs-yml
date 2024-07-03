@@ -227,3 +227,5 @@ markdown_extensions:
       custom_checkbox: true
     # Make them clickable
       clickable_checkbox: true
+  # Buttons
+  - attr_list
