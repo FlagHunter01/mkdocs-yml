@@ -79,8 +79,8 @@ You can annotate text (1)
 
 ## Buttons
 
-[Primary button](#){ .md-button .md-button--primary }
-[Peasant button](#){ .md-button }
+[Primary button](#buttons){ .md-button .md-button--primary }
+[Peasant button](#buttons){ .md-button }
 
 ## Code 
 
