@@ -265,7 +265,7 @@ tags on separate lines and adding new lines between the tags and the content.
 
 ## Emojis :smile:
 
-[Search emojis :material-arrow-right-thick:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search) { .md-button }
+[Search emojis :material-arrow-right-thick:](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search){ .md-button }
 
 ## Images
 
