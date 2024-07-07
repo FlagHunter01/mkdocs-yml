@@ -3,9 +3,9 @@
 ### General information 
 
 # TODO: Name displayed in the top menu and in the browsers tabs
-site_name: Mkdocs Material YML configuration example
+site_name: Exemple de configuration YMl de Mkdocs Material 
 # TODO: URL of the website
-site_url: https://flaghunter01.github.io/mkdocs-yml/en/
+site_url: https://flaghunter01.github.io/mkdocs-yml/fr/
 # TODO: GitHub repo URL
 repo_url: https://github.com/FlagHunter01/mkdocs-yml/
 # TODO: GitHub repo name
@@ -14,12 +14,12 @@ repo_name: mkdocs-yml
 ### Navigation
 
 nav: 
-  - Home: index.md
+  - Acceuil: index.md
   - Blog: blog/index.html
   - Guide: 
     - guide/index.md
-    - Setup: guide/setup.md
-    - Useage: guide/useage.md
+    - Installation: guide/setup.md
+    - Utilisation: guide/useage.md
 
 ### Theme customization
 
@@ -67,7 +67,7 @@ theme:
   ## Language
 
   # TODO: Don't forget to change if in multilingual project
-  language: en
+  language: fr
 
   ## Logo and icons
 
@@ -141,7 +141,6 @@ plugins:
   - privacy
   # Search
   - search
-  # Social cards
   - social
   # Blog
   - blog
@@ -157,11 +156,12 @@ plugins:
   # FIXME:Git commiters 
   #- git-committers:
     # TODO: Repo URL
-  #    repository: FlagHunter01/mkdocs-yml
+  #    repository: FlagHunter01/school
     # TODO: Branch
   #    branch: main
   # Offline
   - offline
+
     
 extra:
   ### Socials
@@ -175,10 +175,10 @@ extra:
 
   alternate:
     - name: English
-      link: .
+      link: ../en/
       lang: en
     - name: Français
-      link: ../fr/
+      link: .
       lang: fr
 
 markdown_extensions:
