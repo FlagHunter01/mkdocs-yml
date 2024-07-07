@@ -140,7 +140,7 @@ plugins:
   # Search
   - search
   # FIXME:Social cards
-  #- social
+  - social
   # Blog
   - blog
   # RSS

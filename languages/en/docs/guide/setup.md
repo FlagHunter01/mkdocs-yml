@@ -143,3 +143,12 @@ Text
     |-------|---------|
     | 1     | Banana  |
     | 2     | Apple   |
+
+## Note to self - plugins acting up
+
+If socials or blog or projects starts giving strange errors, even after downloading the latest Insiders version, try this:
+
+```
+pip install mkdocs-material mkdocs-material-extensions --upgrade
+pip install pillow cairosvg --upgrade
+```
