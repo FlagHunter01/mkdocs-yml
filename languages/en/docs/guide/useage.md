@@ -336,7 +336,7 @@ tags on separate lines and adding new lines between the tags and the content.
 
 [Hover me](https://example.com "I'm a tooltip!")
 
-For normal text, add this:{ title="Important information" }
+For other objects, proceed as follows: :smile:{ title="Important information" }
 
 ### Abbreviations
 
