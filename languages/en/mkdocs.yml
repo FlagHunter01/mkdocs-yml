@@ -186,6 +186,8 @@ markdown_extensions:
   - admonition
   # Collapseable admonitions
   - pymdownx.details
+  # Annotations 
+  - md_in_html
   # Inline footnotes
   - footnotes
   # Table of contents
