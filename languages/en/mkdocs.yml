@@ -89,7 +89,7 @@ theme:
     - navigation.instant.prefetch
     # Show loading progress bar (not shown if loading takes less than 0.4s) 
     - navigation.instant.progress
-    # Link preview FIXME: buy latest Insiders version
+    # Link preview 
     - navigation.instant.preview
     # Anchor tracking
     - navigation.tracking
