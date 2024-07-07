@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://flaghunter01.github.io/mkdocs-yml/en/index.html</loc>
+         <lastmod>2024-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://flaghunter01.github.io/mkdocs-yml/en/blog/index.html</loc>
+         <lastmod>2024-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://flaghunter01.github.io/mkdocs-yml/en/guide/index.html</loc>
+         <lastmod>2024-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://flaghunter01.github.io/mkdocs-yml/en/guide/setup.html</loc>
+         <lastmod>2024-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://flaghunter01.github.io/mkdocs-yml/en/guide/useage.html</loc>
+         <lastmod>2024-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
