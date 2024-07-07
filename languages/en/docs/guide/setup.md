@@ -114,7 +114,7 @@ Text
 
 [Link](http://url.com)
 
-![Image](images/cat.png)
+![Image](../images/cat.jpg))
 
 | Table | Example |
 |-------|---------|
@@ -137,7 +137,7 @@ Text
 
     [Link](http://url.com)
 
-    ![Image](images/cat.png)
+    ![Image](../images/cat.jpg) 
 
     | Table | Example |
     |-------|---------|
