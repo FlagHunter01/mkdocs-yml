@@ -122,6 +122,8 @@ theme:
     - content.code.copy
     # Line selection button
     - content.code.select
+    # Annotations
+    - content.code.annotate
 
     ## Misc
 

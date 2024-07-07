@@ -70,12 +70,13 @@ status: new (I don't use those)
 ## Annotations
 
 You can annotate text (1)
+{ .annotate }
 
 1.  Annotations can nest anything like code blocs or admonitions.
 
-!!! info "They can be placed everywhere (2)"
+!!! note annotate "Phasellus posuere in sem ut cursus (1)"
 
-2.  Like here !
+1.  Like here !
 
 ## Buttons
 
@@ -93,12 +94,12 @@ This is a code block
 ```c title="Full-option block" linenums="1" hl_lines="4-5"
 if (a == b)
 {
-    Tim = llama // (3)!
+    Tim = llama // (1)!
     // This is highlighted
 }
 ```
 
-3. Place `!` after the annotation to make the comment character disappear !
+1. Place `!` after the annotation to make the comment character disappear !
 
 ## Content tabs
 
