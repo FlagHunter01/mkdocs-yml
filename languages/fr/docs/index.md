@@ -9,7 +9,7 @@ Ce projet est un template pour la configuration YML que j'utilise pour mes proje
 Il montre aussi une arbo d'exemple peuplée par un guide.
 
 
-[Lisezle YML](https://github.com/FlagHunter01/mkdocs-yml/blob/main/languages/en/mkdocs.yml){ .md-button .md-button--primary } [Regardez l'arbo](https://github.com/FlagHunter01/mkdocs-yml){ .md-button }
+[Lisez le YML](https://github.com/FlagHunter01/mkdocs-yml/blob/main/languages/en/mkdocs.yml){ .md-button .md-button--primary } [Regardez l'arbo](https://github.com/FlagHunter01/mkdocs-yml){ .md-button }
 
 Lisez le [guide](guide/setup.md#preface) pour commencer rapidement et jettez un oeuil à la [page d'utilisation](guide/useage.md#metadata) pour voir la plupart des options et leur rendu. 
 
