@@ -1,14 +1,14 @@
-# Better read on VSCode with the TODO Highlight v2 module
+# Se lit mieux sur VSCode avec le module TODO Highlight v2
 
-### General information 
+### informations générales
 
-# TODO: Name displayed in the top menu and in the browsers tabs
+# TODO: Nom affiché dans le menu du haut et dans les onglets du navigateur
 site_name: Exemple de configuration YMl de Mkdocs Material 
-# TODO: URL of the website
+# TODO: URL du site web (important pour la bonne construction du site!)
 site_url: https://flaghunter01.github.io/mkdocs-yml/fr/
-# TODO: GitHub repo URL
+# TODO: URL de la repo GitHub
 repo_url: https://github.com/FlagHunter01/mkdocs-yml/
-# TODO: GitHub repo name
+# TODO: Nom de la repo GitHub
 repo_name: mkdocs-yml 
 
 ### Navigation
@@ -21,23 +21,23 @@ nav:
     - Installation: guide/setup.md
     - Utilisation: guide/useage.md
 
-### Theme customization
+### Personnalisation du thème
 
 theme:
-  # Enables the material theme
+  # Utilisation du thème Material
   name: material
 
-  ## Colors
+  ## Couleurs
 
   palette:
-    # Palette toggle for automatic mode
+    # Mode automatique de la palette des couleurs
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
       primary: deep purple
       accent: light blue
-    # Palette toggle for light mode
+    # Mode clair de la palette
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
@@ -45,7 +45,7 @@ theme:
         name: Switch to dark mode
       primary: deep purple
       accent: light blue
-    # Palette toggle for dark mode
+    #Mode sombre de la palette
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
@@ -54,82 +54,82 @@ theme:
       primary: teal
       accent: amber
 
-  ## Font
+  ## Police
 
-  # If the privacy module isn't used, uncomment the following line to stay in GDPR
+  # Si le module privacy n'est pas utilisé, décommenter la ligne suivante pour rester dans le RGPD
   #font: false
   font:
-    # All text except code
+    # Tout le texte sauf le code
     text: Roboto
-    # Inline and block code
+    # Code en blocs et en ligne
     code: Roboto Mono
   
-  ## Language
+  ## Langue
 
-  # TODO: Don't forget to change if in multilingual project
+  # TODO: Ne pas oublier de la changer s'il s'agit d'un projet multilingue
   language: fr
 
-  ## Logo and icons
+  ## Logo et icones
 
-  # TODO: Use a custom image
+  # TODO: Utilisation d'une image personnalisée
   #logo: assets/logo.png
-  # TODO: Use a bundled icon
+  # TODO: Utilisation d'une icone fournie
   #icon:
   #  logo: material/library
-  # TODO: favicon (icon in the browsers tab)
+  # TODO: favicon (icone dans l'onglet du navigateur)
   #favicon: assets/favicon.png
 
   features:
     
     ## Navigation
 
-    # Monopage mode using XHR
+    # Mode monopage utilisant le XHR
     - navigation.instant
-    # Prefetch the page when the user hovers the link to it
+    # Pré-téléchargement des pages lorsque l'utilisateur survole un lien (diminution du temps de téléchargement percu)
     - navigation.instant.prefetch
-    # Show loading progress bar (not shown if loading takes less than 0.4s) 
+    # Afficher la barre de chargement(ne s'affiche que si le chargement dure plsu de 0.4s) 
     - navigation.instant.progress
-    # Link preview 
+    # Prévisualisation des liens
     - navigation.instant.preview
-    # Anchor tracking
+    # Tracage de l'ancre (anchor)
     - navigation.tracking
-    # Display tabs in top menu
+    # Afficher les sections dans le menu du haut
     - navigation.tabs
-    # Breadcrumbs on top of the page
+    # Affichage du chemin de la page en haut
     - navigation.path
-    # Allow sections to have index pages
+    # Autoriser les sections d'avoir leur propre index
     - navigation.indexes
-    # Back to top button
+    # Bouton "Retour en haut de page"
     - navigation.top
-    # Footer nav
+    # Navigation en pied-de-page
     - navigation.footer
 
-    ## Search
+    ## Recherche
 
-    # Search autocompletion
+    # Suggestions de recherche
     - search.suggest
-    # Highlight hits
+    # Surligner les résultats de la recherche
     - search.highlight
 
-    ## GitHub integration
+    ## Intégration GitHub
     
-    # View page source
+    # Bouton pour visualiser le code source de la page
     - content.action.view
 
-    ## Code blocks
+    ## Blocs de code
 
-    # Copy button
+    # Bouton de copie
     - content.code.copy
-    # Line selection button
+    # Bouton pour sélectionner des lignes discretes
     - content.code.select
     # Annotations
     - content.code.annotate
 
     ## Misc
 
-    # Link content tabs togeather
+    # Joindre les tableaux de contenu ensemble
     - content.tabs.link
-    # Display footnotes as tooltips
+    # Afficher les notes de pied-de-page comme des tooltips
     - content.footnote.tooltips
     # Tooltips
     - content.tooltips
@@ -137,10 +137,11 @@ theme:
 ### Plugins
 
 plugins:
-  # Privacy (GRDP)
+  # Vie privée (RGPD)
   - privacy
-  # Search
+  # Recherche
   - search
+  # Cartes de visite (Twitter, Discord etc)
   - social
   # Blog
   - blog
@@ -149,9 +150,9 @@ plugins:
       match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
-  # Git dates
+  # Dates Git
   - git-revision-date-localized:
-      # Show the creation date along with the last modif date
+      # Afficher la date de création en plus de la date de dernière modification
       enable_creation_date: true
   # FIXME:Git commiters 
   #- git-committers:
@@ -159,19 +160,19 @@ plugins:
   #    repository: FlagHunter01/school
     # TODO: Branch
   #    branch: main
-  # Offline
+  # Mode hors-ligne
   - offline
 
     
 extra:
-  ### Socials
+  ### Réseaux
 
-  # TODO: customize
+  # TODO: modifier
   social:
     - icon: material/github
       link: https://github.com/FlagHunter01
 
-  ### Language switch
+  ### Sélection de langue
 
   alternate:
     - name: English
@@ -184,52 +185,52 @@ extra:
 markdown_extensions:
   # Abbreviations: RER *[RER]: Réseau Express Régional  --> <p><abbr title="Réseau Express Régional">RER</abbr></p>
   - abbr
-  # Admonitions (or call-outs)
+  # Avertissements
   - admonition
-  # Collapseable admonitions
+  # Avertissements pliables
   - pymdownx.details
   # Annotations 
   - md_in_html
-  # Inline footnotes
+  # Notes sur la même ligne
   - footnotes
-  # Table of contents
+  # Table des matières
   - toc:
-    # Make the anchor visible
+    # Rendre l'ancre visible
       permalink: ⚓︎
-  # Tables
+  # Tableaux
   - tables
-  # Better bold and italic detection
+  # Détection intelligente du gras et de l'italique
   - pymdownx.betterem
-  # Text highlighting
+  # Surligner le texte
   - pymdownx.caret
-  # Code hightlighting
+  # Surligner le code
   - pymdownx.highlight:
       anchor_linenums: true
-  # Inline code highlighting
+  # Surligner le code en ligne
   - pymdownx.inlinehilite
-  # Nesting code and admonitions
+  # imbrication du code et des avertissements
   - pymdownx.superfences
-  # Subscript 
+  # Indice 
   - pymdownx.mark
-  # Superscript 
+  # Exposant 
   - pymdownx.tilde
-  # Diff support
+  # Support du diff
   - pymdownx.critic
   # Emoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  # Render keyboard keys
+  # Dessiner les touches de clavier
   - pymdownx.keys
-  # Convert strings to symbols e.g.: &copy --> ©
+  # Transformer les stings spéciaux en symboles, par ex.: &copy --> ©
   - pymdownx.smartsymbols
   # Content tabs
   - pymdownx.tabbed:
       alternate_style: true
-  # Lists with checkboxes
+  # Listes de taches
   - pymdownx.tasklist:
       custom_checkbox: true
-    # Make them clickable
+    # Les rendre cochables
       clickable_checkbox: true
-  # Buttons
+  # Boutons
   - attr_list
