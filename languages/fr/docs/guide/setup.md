@@ -1,25 +1,25 @@
 ---
-title: Setup
-description: Setting up Material for Mkdocs Insiders
+title: Installation
+description: Installation de Material for Mkdocs Insiders
 ---
 
-## Preface
+## Préface
 
-Please keep in mind that the official documentation at [squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/) is way better and should be used instead of this. 
+Gardez en mémoire le fait que la documentation officielle [squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/) est bien meilleure que celle-ci et devraient être utilisée de préférence.
 
-Only use this guide if you want to have a working example to copy-paste once you understand the real documentation.
+N'utilisez ce guide que si vous avez besoin d'un template à copier-coller et que ous comprenez déjà la vraie docupmentation.
 
-!!! warning "Insiders paid version" 
-    This guide only works with [Material Insiders](https://squidfunk.github.io/mkdocs-material/insiders/)
+!!! warning "Version payante Insiders" 
+    Ce guide ne fonctionne qu'avec [Material Insiders](https://squidfunk.github.io/mkdocs-material/insiders/)
 
-!!! info "Environment"
-    **This guide is for self-hosting on Linux.** For other hosting and deployment options, please refer to [the offical doc](https://squidfunk.github.io/mkdocs-material/getting-started/) once again. 
+!!! info "Environnement"
+    **Ce guide sert au self-hosting sur Linux.** Pour les autres méthodes d'implémentation, merci de se référer encore une fois a la [documentation officielle](https://squidfunk.github.io/mkdocs-material/getting-started/). 
 
-## Preparing the environment
+## Préparation de l'environnment
 
-### Downloads
+### Téléchargements
 
-Here are all the downloads you'll need to do.
+Voici tous les téléchargements que vous devrez effectuer:
 
 ```
 apt install python3 libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
@@ -32,45 +32,45 @@ pip install mkdocs-glightbox
 
 ### Material for Mkdocs Insiders
 
-Aquire Material for Mkfocs insiders. 
-The post-bill GitHub page along [this one](https://squidfunk.github.io/mkdocs-material/insiders/access-management/) should have all the information you need. 
+Achetez Material for Mkfocs insiders. 
+La page post-achat ainsi que [celle-ci](https://squidfunk.github.io/mkdocs-material/insiders/access-management/) devraient contenir toutes les informations dont vous avez besoin.
 
-Once you're done, proceed with [Getting started with Insiders](https://squidfunk.github.io/mkdocs-material/insiders/getting-started/). 
+Une fois que vous aurez terminé, rendez vois ici: [Getting started with Insiders](https://squidfunk.github.io/mkdocs-material/insiders/getting-started/). 
 
-## Using Mkdocs
+## Utiliser Mkdocs
 
-### linux commands
+### Commandes Linux
 
-It's extemely simple !
+C'est très simple !
 
-First, create a new project:
+Pour commencer, créez un nouveau projet:
 
 ```
 mkdocs new my-project
 cd my-project
 ```
 
-Inside the new folder, you will find the basic layout of an Mkdocs project. 
+Dans ce nouveau dossier, vous trouvrez l'arbo basique d'un projet MkDocs. 
 
-This is where you can copy-paste my template (cloneable from [https://github.com/FlagHunter01/mkdocs-yml.git](https://github.com/FlagHunter01/mkdocs-yml.git)).
+C'est ici que vous pouvez copier-coller mon template (cloneable de [https://github.com/FlagHunter01/mkdocs-yml.git](https://github.com/FlagHunter01/mkdocs-yml.git)).
 
-In order to preview your site, use the following command and go to [localhost:8000](http://localhost:8000):
+Pour prévisualiser votre site, entrez la commande suivante puis connecez-vous a [localhost:8000](http://localhost:8000):
 
 ```
 mkdocs serve
 ```
 
-Once ou're done, generate the HTML with:
+Une fois que vous avez terminé, vous pouvez générer l'HTML avec:
 
 ```
 mkdocs buid
 ```
 
-The code will be availible at `\site\`. 
+Le code sera disponible a `\site\`. 
 
 ### VSCode
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/), you can add two modules that will greatly enhance your experience.
+Si vous utilisez [Visual Studio Code](https://code.visualstudio.com/), vous pouvez ajouter deux modules qui amélioreront grandement votre qualité de vie.
 
 #### TODO Highlight v2
 
