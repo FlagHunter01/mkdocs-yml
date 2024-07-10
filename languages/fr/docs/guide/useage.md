@@ -1,47 +1,48 @@
 ---
-title: Useage
-description: This page contains most of the markdown options offered by Material Insiders. 
+title: Utilisation
+description: Cette page contient la plupart des options markdown offertes par Material Insiders. 
+subtitle: Seulement pour Material for Mkdocs Insiders
 ---
 
-## Metadata
+## Metadonnées
 
-Each page has configurable metadata, that can be definded at the beggining as flollows:
+Chaque page contient des données configurables, qui peuvent être définies comme suit:
 
 ```md
 ---
-title: Useage
-subtitle: Material for Mkdocs Insiders only
-description: This page contains most of the markdown options offered by Material Insiders. 
-status: new (I don't use those)
+title: Utilisation
+subtitle: Seulement pour Material for Mkdocs Insiders
+description: Cette page contient la plupart des options markdown offertes par Material Insiders. 
+status: new (Je n'utilise pas les status)
 ---
 ```
 
-## Admonitions
+## Avertissements
 
 !!! note 
-    This is a simple note.
+    Ceci est une note simple.
 
 !!! note ""
-    This is a note without title.
+    Ceci est une note sans titre.
 
-!!! note "This is a note with a title and a body"
-    This is the body of the note with a title and a body.
+!!! note "Ceci est une note avec un titre et un corps"
+    TCeci est le corps de la note avec un titre et un corps.
 
-!!! note "Notes can nest anything"
-    !!! example "Like other notes"
+!!! note "Tout peut s'emboiter dans les notes"
+    !!! example "Comme d'autres notes"
 
-    ```md title="Or code blocks"
-    !!! note "Notes can nest anything"
-        !!! example "Like other notes"
+    ```md title="Ou des blocs de code"
+    !!! note "Tout peut s'emboiter dans les notes"
+        !!! example "Comme d'autres notes"
     ```
 
-??? note "This is a collapsible note"
-    Its body is hidden. 
+??? note "Ceci est une note fermable"
+    Son corps est caché. 
 
-???+ note "This is an un-collapsed collapsible note"
-    Its body is visible by default.
+???+ note "Ceci est une note fermable ouverte"
+    Son corps est visible par défaut.
 
-!!! note inline end "This note is inline, at the end of the line"
+!!! note inline end "Cette note est contenue sur une ligne, à la fin de la ligne"
 
 !!! note
 
@@ -69,69 +70,69 @@ status: new (I don't use those)
 
 ## Annotations
 
-You can annotate text (1)
+On peut annoter le texte (1)
 { .annotate }
 
-1.  Annotations can nest anything like code blocs or admonitions.
+1.  Tout peut être imbriqué dans les annotations, comme des avertissements ou du code. 
 
-!!! note annotate "Phasellus posuere in sem ut cursus (1)"
+!!! note annotate "Les annotations peuvent être mises partout (1)"
 
-1.  Like here !
+1.  Comme ici !
 
-## Buttons
+## Boutons
 
-[Primary button](#buttons){ .md-button .md-button--primary }
-[Peasant button](#buttons){ .md-button }
+[Bouton principal](#buttons){ .md-button .md-button--primary }
+[Bouton de paysan](#buttons){ .md-button }
 
 ## Code 
 
-`This is inline code`
+`Ceci est une ligne de code`
 
 ```
-This is a code block
+Ceci est un bloc de code
 ```
 
-```c title="Full-option block" linenums="1" hl_lines="4-5"
+```c title="Bloc de code toutes options" linenums="1" hl_lines="4-5"
 if (a == b)
 {
     Tim = llama // (1)!
-    // This is highlighted
+    // Ceci est surligné
 }
 ```
 
-1. Place `!` after the annotation to make the comment character disappear !
+1. Utilisez `!` derrière l'annotation pour faire disparaitre le symbole de commentaire devant !
 
-## Content tabs
-
-=== "A"
-
-    This is some content
-
-=== "B"
-
-    This is some other content
-
-Content tabs can be liked. For example, Selecting "B" will select it for all content tabs.
+## Tableaux de contenu
 
 === "A"
 
-    You shouldn't see this if you selected "B"
+    Ceci est du contenu
 
 === "B"
 
-    You should see this if you selected "B". 
+    Et ceci est un autre contenu
 
-You can nest everything inside tabs, and tabs can be nested inside everything. 
+Les tableaux de contenu peuvent être liés. Par exemple, choisir "B" affectera tous les tableaux.
 
-## Tables
+=== "A"
 
-| Simple | Table |
-|--------|-------|
-| Sugar  | Bad   |
-| Water  | Good  |
+    Vous ne devriez pas voir ceci si vous avez sélectionné "B".
+
+=== "B"
+
+    Vous devriez voir ceci si vous avez sélectionné "B". 
+
+Vous pouvez tout imbriquer dans les tableaux, et les tableaux peuvent être imbriqués partout.
+
+## Tableaux
+
+| Tableau | Simple |
+|--------|---------|
+| Sucre  | Mauvais |
+| Eau    | Bon     |
 
 
-| Left-aligned | Middle-aligned | Right-aligned |
+| Aligné à gauche| Aligné au centre| Aligné a droite |
 |:-------------|:--------------:|--------------:|
 | Test         | Test           | Test          |
 
