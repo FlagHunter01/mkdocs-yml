@@ -74,11 +74,11 @@ Si vous utilisez [Visual Studio Code](https://code.visualstudio.com/), vous pouv
 
 #### TODO Highlight v2
 
-Download TODO Highlight v2 to highlight all the `TODO:` tags in my files. It's an easy way to keep in mind all the options that need to be customized befor you start writing your documentation.
+Téléchargez TODO Highlight v2 pour souligner tous les tags `TODO:` dans mes fichiers. C'est un moyen simple de se remémorer toutes les options qui doivent être personnalisées avant de commencer a écrire votre documentation.
 
 #### YAML by RedHat
 
-Download YAML by RedHat and paste the following in the JSON settings in order to have the official Material for Mkdocs debug:
+Téléchargez YAML by RedHat et copiez ce qui suit dans vous paramètres JSON pour obtenir le debug officiel de Material for Mkdocs:
 
 ```json
 {
@@ -95,24 +95,24 @@ Download YAML by RedHat and paste the following in the JSON settings in order to
 }
 ```
 
-## Using markdown
+## Utiliser le markdown
 
-Here are some basics of markdown. 
+Voici les bases du markdown. 
 
 ```md
-Text
+Texte
 
-*Italic*
+*Italique*
 
-**Bold**
+**Gras**
 
-# Main title (1 per doc)
+# Titre principal (1 par doc)
 
-## Title
+## Titre
 
-### Subtitle
+### Sous-titre
 
-[Link](http://url.com)
+[Lien](http://url.com)
 
 ![Image](../images/cat.jpg))
 
@@ -122,20 +122,20 @@ Text
 | 2     | Apple   |
 ```
 
-!!! example "Output"
-    Text
+!!! example "Sortie"
+    Texte
 
-    *Italic*
+    *Italique*
 
-    **Bold**
+    **Gras**
 
-    # Main title (1 per doc)
+    #Titre principal (1 par doc)
 
-    ## Title
+    ## Titre
 
-    ### Subtitle
+    ### Sous-titre
 
-    [Link](http://url.com)
+    [Lien](http://url.com)
 
     ![Image](../images/cat.jpg) 
 
@@ -144,10 +144,9 @@ Text
     | 1     | Banana  |
     | 2     | Apple   |
 
-## Note to self - plugins acting up
+## Note à soi-même - quand les plugins déraillent
 
-If socials or blog or projects starts giving strange errors, even after downloading the latest Insiders version, try this:
-
+Si socials, blog ou projet commencent a retourner des erreurs étranges même après avoir téléchargé la dernière version d'Insiders, essayer ce qui suit:
 ```
 pip install mkdocs-material mkdocs-material-extensions --upgrade
 pip install pillow cairosvg --upgrade
