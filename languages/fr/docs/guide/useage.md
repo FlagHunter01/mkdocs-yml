@@ -136,9 +136,9 @@ You can nest everything inside tabs, and tabs can be nested inside everything.
 | Test         | Test           | Test          |
 
 
-## Diagrams
+## Diagrammes
 
-Material allows some neat diagrams but I don't really use those. 
+Material prend en charge des diagrammes cool, mais je ne les utilise pas vraiment. 
 
 ## Foornotes
 
