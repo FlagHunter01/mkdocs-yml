@@ -140,7 +140,7 @@ You can nest everything inside tabs, and tabs can be nested inside everything.
 
 Material allows some neat diagrams but I don't really use those. 
 
-## Foornotes
+## Footnotes
 
 The footnote is at the foot of the page [^1].
 

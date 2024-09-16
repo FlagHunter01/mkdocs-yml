@@ -137,9 +137,9 @@ Vous pouvez tout imbriquer dans les tableaux, et les tableaux peuvent être imbr
 | Test         | Test           | Test          |
 
 
-## Diagrams
+## Diagrammes
 
-Material allows some neat diagrams but I don't really use those. 
+Material prend en charge des diagrammes cool, mais je ne les utilise pas vraiment. 
 
 ## Foornotes
 
