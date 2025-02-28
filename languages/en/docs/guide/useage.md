@@ -111,7 +111,7 @@ if (a == b)
 
     This is some other content
 
-Content tabs can be liked. For example, Selecting "B" will select it for all content tabs.
+Content tabs can be linked. For example, Selecting "B" will select it for all content tabs.
 
 === "A"
 
