@@ -39,7 +39,7 @@ Une fois que vous aurez terminé, rendez vois ici: [Getting started with Insider
 
 ## Utiliser Mkdocs
 
-### Commandes Linux
+### Commandes
 
 C'est très simple !
 
