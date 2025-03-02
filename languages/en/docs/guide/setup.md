@@ -39,7 +39,7 @@ Once you're done, proceed with [Getting started with Insiders](https://squidfunk
 
 ## Using Mkdocs
 
-### linux commands
+### Commands
 
 It's extemely simple !
 
